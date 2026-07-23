@@ -3,23 +3,15 @@ import java.util.Scanner;
 class hello{
     public static void main(String [] args){
        Scanner s = new Scanner(System.in);
-        int Tamil= s.nextInt();
-        int english =  s.nextInt();
-        int maths = s.nextInt();
-        int science =s.nextInt();
-        int social = s.nextInt();
-        int avg = Tamil+english+maths+science+social/5;
+        int n1 = s.nextInt();
+        int n2 = s.nextInt();
+        String res = n1>n2?"n1 is greater":"n2 is grater";
+        System.out.println(res);
+       }
 
         
 
-        if(avg>35){
-            System.out.println("You need to improve");
-        }
         
-        else{
-            System.out.println("good to go");
-        }
 
         
     }
-}
